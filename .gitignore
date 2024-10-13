@@ -70,3 +70,6 @@ yarn.lock
 *.log
 *.bak
 *.swp
+.vercel
+/.env.development
+/.env.production

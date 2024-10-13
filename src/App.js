@@ -23,7 +23,7 @@ const Chatbot = () => {
       setLoading(true);  // Set loading state to true
 
       try {
-        const response = await axios.post('http://localhost:5000/getResponse', {
+        const response = await axios.post(`${process.env.REACT_APP_API_BASE_URL}/getResponse`, {
           message: textToSend,
         });
 
